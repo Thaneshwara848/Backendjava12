@@ -16,4 +16,3 @@ public class Demo2 {
 		}
 	}
 }
-
