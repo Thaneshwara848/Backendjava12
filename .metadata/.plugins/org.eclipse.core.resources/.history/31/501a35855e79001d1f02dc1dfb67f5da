@@ -1,0 +1,19 @@
+package com;
+
+import java.util.Scanner;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("ID : ");
+		int id=sc.nextInt();
+		System.out.print("NAME  : ");
+		String name=sc.next();
+		
+		System.out.print("AGE : ");
+		System.out.print("SALARY : ");
+		System.out.print("DESIG: ");
+		
+	}
+}

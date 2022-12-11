@@ -1,0 +1,23 @@
+package com;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		//5s steps 
+		// load the driver 
+		// createt the connection 
+		// statamment 
+		// exteucte 
+		// close 
+		try {
+			Class.forName("com.mysql.jdbc.Driver"); // JAR file 
+			Connection con = DriverManager.getConnection(null, "root", "root");
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}

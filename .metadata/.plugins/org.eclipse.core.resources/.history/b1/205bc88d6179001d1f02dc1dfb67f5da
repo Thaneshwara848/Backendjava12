@@ -1,0 +1,28 @@
+package com;
+class com.mysql.jdbc.Driver
+{
+	
+}
+class B extends A
+{
+	
+}
+public class Demo2 {
+
+	public static void main(String[] args) {
+		//5s steps 
+		// load the driver 
+		// createt the connection 
+		// statamment 
+		// exteucte 
+		// close 
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+		
+	}
+
+}

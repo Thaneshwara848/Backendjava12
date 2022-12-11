@@ -1,0 +1,23 @@
+package com;
+import java.util.Scanner;
+
+class A 
+{
+	A()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter ID : ");
+		
+	}
+	void display()
+	{
+		System.out.println("A class Display method...!");
+	}
+}
+public class Emp {
+
+	public static void main(String[] args) {
+		A  a = new A();
+		a.display();
+	}
+}

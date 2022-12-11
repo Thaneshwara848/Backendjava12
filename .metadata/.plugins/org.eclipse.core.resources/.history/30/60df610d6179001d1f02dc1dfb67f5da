@@ -1,0 +1,16 @@
+package com;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		//5s steps 
+		// load the driver 
+		// createt the connection 
+		// statamment 
+		// exteucte 
+		// close 
+		
+
+	}
+
+}
