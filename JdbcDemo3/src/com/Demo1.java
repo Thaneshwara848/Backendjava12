@@ -10,10 +10,9 @@ public class Demo1 {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/slbackend","root", "root");
 //			Statement stmt=con.createStatement();
 //			stmt.execute("insert into employee values(900,'prakash',35,35000,'Dev')");
-			
 			PreparedStatement stmt=con.prepareStatement("insert into employee values(?,?,?,?,?)");
-			Scanner sc = new Scanner(System.in);
 			
+			Scanner sc = new Scanner(System.in);
 			System.out.print("Enter ID     : ");
 			int id=sc.nextInt();
 			System.out.print("Enter NAME   : ");
@@ -24,6 +23,7 @@ public class Demo1 {
 			int salary=sc.nextInt();
 			System.out.print("Enter DESIG  : ");
 			String desig=sc.next();
+			
 			stmt.setInt(1, id);
 			stmt.setString(2,name);
 			stmt.setInt(3, age);
@@ -40,4 +40,6 @@ public class Demo1 {
 	}
 
 }
+
+
 
