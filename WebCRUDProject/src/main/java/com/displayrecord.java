@@ -37,6 +37,9 @@ public class displayrecord extends HttpServlet {
 				out.print("<br>");
 			}
 			
+			out.println("Data Inserted Succsfully....!<br>");
+			out.print("<a href='index.html'>Home page </a>");
+			
 			
 		} catch (Exception e) {
 			System.out.println(e);

@@ -1,6 +1,7 @@
 package com;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -39,7 +40,10 @@ public class deleterecord extends HttpServlet {
 		
 		stmt.execute();
 		stmt.close();con.close();
-		System.out.println("Data Deleted Succsfully....!");
+		PrintWriter out= response.getWriter();
+		out.println("Data Inserted Succsfully....!<br>");
+		out.print("<a href='index.html'>Home page </a>");
+		
 		
 
 	} catch (Exception e) {
