@@ -20,7 +20,6 @@ public class insertrecord extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		String uid =request.getParameter("uid");
@@ -46,16 +45,19 @@ public class insertrecord extends HttpServlet {
 			out.println("Data Inserted Succsfully....!<br>");
 			out.print("<a href='index.html'>Home page </a>");
 			
-			
-
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		
-	
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}
-
 }
+
+	
+
+	
+	
+	
+	
