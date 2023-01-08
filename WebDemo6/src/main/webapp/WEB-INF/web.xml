@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>WebDemo6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>mydriver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>ContextDemo</display-name>
+    <servlet-name>ContextDemo</servlet-name>
+    <servlet-class>com.ContextDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo</servlet-name>
+    <url-pattern>/ContextDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContextDemo2</display-name>
+    <servlet-name>ContextDemo2</servlet-name>
+    <servlet-class>com.ContextDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo2</servlet-name>
+    <url-pattern>/ContextDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContextDemo3</display-name>
+    <servlet-name>ContextDemo3</servlet-name>
+    <servlet-class>com.ContextDemo3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo3</servlet-name>
+    <url-pattern>/ContextDemo3</url-pattern>
+  </servlet-mapping>
+</web-app>
