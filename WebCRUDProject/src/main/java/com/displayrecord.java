@@ -20,7 +20,6 @@ public class displayrecord extends HttpServlet {
    
     public displayrecord() {
         super();
-        // TODO Auto-generated constructor stub
     }
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -37,7 +36,7 @@ public class displayrecord extends HttpServlet {
 				out.print("<br>");
 			}
 			
-			out.println("Data Inserted Succsfully....!<br>");
+			
 			out.print("<a href='index.html'>Home page </a>");
 			
 			
